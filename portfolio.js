@@ -6,5 +6,8 @@ function sendmail(){
     }
     emailjs.send("service_xk7iz0v","template_q9q4mcq",parms).then(function(res){
         alert("Message Sent Succesfully");
+        document.getElementById("name").value=''
+        document.getElementById("email").value=''
+        document.getElementById("message").value=''
     })
 }
