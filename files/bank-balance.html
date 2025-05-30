@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project</title>
+    <style>
+        #withdrawbtn,#depositbtn{
+            border: 2px solid black;
+            border-radius: 10px;
+            width: 100px;
+            height: 35px;
+            background-color: beige;
+        }
+        #deposit,#withdraw{
+            /* border-radius: 10px; */
+            border: 2px solid black;
+            width: 200px;
+            height: 30px;
+            background-color: white;
+            margin-right: 10px;
+            padding: 1px 10px;
+        }
+        #submitbtn{
+             border-radius: 10px;
+            border: 2px solid black;
+            width: 200px;
+            height: 40px;
+            background-color: white;
+            margin-right: 10px;
+            padding: 1px 10px;
+            background-color: rgb(23, 173, 23);
+            color: white;
+            margin-left: 80px;
+        }
+    </style>
+</head>
+<body style="display: flex;justify-content: center;">
+    <div style="display: flex;width: 1000px;align-items: center;flex-direction: column;background-color: rgb(223, 222, 222);height: 500px;margin-top: 100px;">
+        <div style="background-color:  cornflowerblue;height: 200px;width: 100%; color: whitesmoke;display: flex; flex-direction: column;align-items: center;"><h1 style="font-weight: lighter;">Cash / Bank Balance</h1>
+          <label style="font-size: 70px;" id='bal'>$0</label><br>
+           <!-- <label id="date"style="color:white">ddd</label> -->
+        </div>
+        <div>
+        <!-- <h1>Children's Bank</h1> -->
+    <form>
+        <div style="padding-top: 20px;">
+        <label style="font-weight: bold; font-size: 25px;">Deposit</label><br><br>
+        <input type="text" id="deposit" placeholder="Enter the amount to deposit">
+        <input type="button" value="Deposit" id="depositbtn" onclick="depositfunc()" ></div>
+        <div style="padding-top: 20px;">
+        <label style="font-weight: bold; font-size: 25px;">Withdraw</label><br><br>
+        <input type="text" id="withdraw" placeholder="Enter the amount to withdraw"><input type="button" value="Withdraw" id="withdrawbtn" onclick="withdrawfunc()"></div><br>
+        <input type="submit" value="submit to get bank Balance" id="submitbtn" onclick="balanceamt()">
+
+    </form></div></div>
+    <script>
+       
+        
+        let balance=0;
+
+       
+        function depositfunc(){
+            let dep=Number(document.getElementById('deposit').value);
+            if(dep>0){
+                balance+=dep;
+                alert(`your deposit of $ ${dep} is successfull`)
+                document.getElementById('deposit').value=""
+            }
+            else{
+                alert("Enter a correct  amount")
+                document.getElementById('deposit').value=""
+            }
+        }
+        function withdrawfunc(){
+            let withd=Number(document.getElementById('withdraw').value);
+             if (withd<0){
+                alert("Enter a valid amount")
+            }
+            else if(withd<=balance){
+                balance-=withd;
+                alert(`your withdrawal of $ ${withd} is successfull`)
+                document.getElementById('withdraw').value=""
+            }
+            
+            else{
+                alert("Insufficient balance")
+                document.getElementById('withdraw').value=""
+            }
+        }
+        
+        function balanceamt(){
+        event.preventDefault();
+                document.getElementById('bal').innerHTML = `$${balance}` 
+                
+           
+
+            
+
+        }
+    </script>
+</body>
+</html>

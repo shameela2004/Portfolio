@@ -1,0 +1,349 @@
+ .one{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 165px;
+    margin-right: 150px;
+   
+    
+
+
+}
+
+.two>div{
+    margin: 10px;
+    margin-bottom: -10px;
+}
+.two{
+    display: flex;
+    justify-content: space-around;
+    font-weight: lighter;
+    font-size: 12px;
+    
+}
+.two img,label,select,button{
+    cursor: pointer;
+}
+
+.two span{
+    font-weight: 600;
+    font-size: small;
+   
+}
+.two img{
+    height: 14px;
+    margin-bottom: -2px;
+    margin-right: 5px;
+}
+select{
+    border: none;
+    background-color: white;
+}
+.supportdropdown{
+    position: relative;
+    display: inline-block;
+}
+.supportdropdowncontent{
+    display: none;
+    position:absolute;
+    right: 30px;
+    min-width: 200px;
+    z-index: 3;
+}
+.supportdropdown:hover .supportdropdowncontent{
+    display: block;
+    color: black;
+    background-color: aliceblue;
+
+}
+.loginorsignup{
+    position: relative;
+    display: inline-block;
+}
+.loginorsignupcontent{
+    display: none;
+    position: absolute;
+    right: 20px;
+    background-color: aliceblue;
+    min-width: 180px;
+    z-index: 1;
+    color: black;
+}
+.loginorsignup:hover .loginorsignupcontent{
+    display: block;
+
+}
+.moredrop{
+    position: relative;
+    display: inline-block;
+}
+.moredropcontent{
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 6px;
+    min-width: 220px;
+    z-index: 1;
+    color: transparent;
+    border-color: transparent;
+}
+.moredrop:hover .moredropcontent{
+    display: block;
+     background-color: aliceblue;
+         color: black;
+
+
+}
+.seconddiv{
+    display: flex;
+    margin-left: 165px;
+    align-items: center;
+    margin-bottom: -8px;
+    
+}
+.seconddiv div{
+    display: flex;
+    align-items: center;
+    padding: 6px 10px;
+    margin-right: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.seconddiv img{
+    width: 28px;
+    height: 25px;
+    margin-right: 5px;
+}
+.seconddiv a{
+    text-decoration: none;
+    color: black;
+    
+}
+.seconddiv div:hover{
+    background-color: rgb(218, 243, 248);
+    border-radius: 5px;
+}
+/* .seconddiv a:visited{
+    background-color: rgb(236, 255, 255);
+} */
+
+#flight:hover img{
+    content: url(images/flight2.png);
+}
+#hotel:hover img{
+    content: url(images/hotel2.png);
+}
+#flighthotel:hover img{
+    content: url(images/flight+hotel2.png);
+}
+#train:hover img{
+    content: url(images/train2.png);
+}
+#bus:hover img{
+    content: url(images/bus2.png);
+}
+#cab:hover img{
+    content: url(images/cab2.png);
+
+}
+#activities:hover img{
+    content: url(images/activities2.png);
+}
+#holidays:hover img{
+    content: url(images/holidays2.png);
+}
+#visa:hover img{
+    content: url(images/visa2.png);
+}
+#more:hover img{
+    content: url(images/more2.png);
+}
+.thirdone{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.thirdoneone{
+    padding-left: 175px;
+    display: flex;
+    padding-top: 30px;
+    margin-right: 4px;
+    
+}
+.thirdoneone div{
+    display: flex;
+    align-items: center;
+    padding: 1px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    color: rgb(230, 222, 222);
+    box-sizing: border-box; 
+    height: 20px;   /* font-weight: bold; */
+    cursor: pointer;
+}
+.thirdoneone div:hover{
+    background-color: white;
+    color:rgb(34, 34, 199);
+    border-radius: 20px;
+}
+
+.thirdtwo{
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr 1fr 1fr 1fr;
+    padding-left: 175px;
+    padding-right: 195px;
+    /* margin-top: 10px; */
+    border-radius: 5px;
+
+}
+.thirdtwo div{
+    height: 90px;
+    background-color: white;
+    cursor: pointer;
+
+}
+.thirdtwo div:hover{
+    background-color: rgb(237, 247, 255);
+}
+
+
+.radio{
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background-color:rgb(49, 152, 255);
+    border: 1px solid white;
+    border-radius: 50%;
+    position: relative;
+    top: 3px;
+}
+.radio:checked{
+   background: white url('images/bluetick.png') ;
+   background-size: cover;
+}
+ 
+.checkbox{
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.checkbox:checked{
+    background: white url('images/bluetick.png') ;
+   background-size: cover;
+}
+.dvv3:hover{
+background-color: rgb(191, 218, 245);
+border-radius: 30px;
+}
+.dvv4:hover{
+background-color: rgb(191, 218, 245);
+border-radius: 30px;}
+.dvv5:hover{
+background-color: rgb(191, 218, 245);
+border-radius: 30px;}
+.dvv6:hover{
+background-color: rgb(191, 218, 245);
+border-radius: 30px;}
+.fourth{
+    height: 57px;
+    font-size: 15px;
+    background-color: #f6feff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -15.5px;
+}
+.fourth div{
+    display: flex;
+    align-items: center;
+    padding: 10px 10px;
+    margin-left: 2px;
+  
+}
+
+.hoveringg:hover{
+    background-color: rgb(218, 243, 248);
+}
+.fourth div{
+    border-radius: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.fourth img{
+    width: 28px;
+    height: 25px;
+    margin-right: 5px;
+}
+.fourth a{
+    text-decoration: none;
+    color: black;
+}
+.fifthone{
+    display: flex;
+    justify-content: center;
+}
+.fifthone div{
+    padding: 5px 15px;
+    font-size: 15px;
+    margin-right: 10px;
+    cursor: pointer;
+    
+}
+.fifthone div:hover{
+    background-color: rgb(218, 243, 248);
+    border-radius: 20px;
+}
+
+.sixth{
+    height:300px ;
+    overflow: auto;
+    scrollbar-width: none;
+}
+.sixth div{
+    cursor: pointer;
+}
+.fade{
+    font-size: 12px;
+    color: #5c6472;
+}
+
+.margin label{
+    margin-left: 15px;
+}
+
+@keyframes animtionred {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.5);    
+    opacity: 0.25;
+        }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes animgirl {
+    0% {
+        transform: translateY(0px);
+        
+    }
+    25%{
+        transform: translateY(10px);
+    }
+    50% {
+        transform: translateY(0.5)
+        }
+    75%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
