@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display:flex</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <style>
+        body{
+            width: 100%;
+            overflow: hidden;
+        }
+        
+        .upperdiv{
+            background-color: white;
+            height:60px;
+            margin-left: -45px;
+            margin-right: -45px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            
+            
+
+        }
+        .div1{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap:10px;
+        }
+        .div2{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 30px;
+        }
+        .div3{
+            display: flex;
+            
+        }
+        .lowerdiv{
+            background-color: black;
+            height: 40px;
+            display: flex;
+            justify-content: space-evenly;
+            color: white;
+            padding-top: 5px;
+            align-items: center;
+            
+           
+            
+            
+        }
+        select{
+            border: none;
+            background-color: white;
+            font-size: 14px;
+            
+        }
+
+    .sideimage{
+            width: 30px;
+            height: 30px;
+        }
+        .signup{
+            border-radius: 100px;
+            border: none;
+            padding: 10px 30px;
+            position:relative;
+            right:75px;
+            z-index: 2;
+
+        }
+        .login{
+            border-radius: 100px;
+            border: none;
+            padding: 10px 30px;
+            padding-left: 40px;
+            position: absolute;
+            z-index: 1;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="upperdiv">
+        <div class="div1">
+        <img src="images/logow3c.png" alt="w3c logo" style="width: 45px;height: 45px;padding: 4px;"/>
+        
+        <select >
+            <option value="tutorials">tutorials</option></select>
+       
+        <select>
+            <option value="excersises">Excersises</option>
+        </select>
+        
+        <select>
+            <option value="Certificates">Certificates</option>
+        </select>
+        
+        <select>
+            <option value="Services">Services</option>
+        </select>
+            <form name="search">
+                <input type="search" placeholder="search...." style="font-style: italic;height: 40px;border-radius: 15px;border-style: solid;padding-left: 10px;">
+            </form>
+            <img src="images/dark-mode.png" alt="darkmode image" style="width: 30px;height: 30px;align-content: center;"/>
+            </div>
+
+
+
+
+    <div class="div2">
+        <div>
+            <img src="images/plus.png" alt="plus image" style="height: 20px;width:20px;"/>plus
+        </div>
+         <div>
+            <img src="images/1.png" alt="space image" style="height: 20px;width:20px;"/>Space
+        </div>
+         <div>
+            <img src="images/2.png" alt="teachers image" style="height: 20px;width:20px;"/>For Teachers
+        </div>
+        <div>
+            <img src="images/cart.png" alt="teachers image" style="height: 20px;width:20px;"/>Get Certified
+        </div>
+        
+    </div>
+<div class="div3">
+    <button class="signup" style="background-color: green;">Sign Up</button>
+    <button class="login" style="background-color: darkseagreen;">Log in</button>
+
+</div>
+
+    </div>
+
+
+    <div class="lowerdiv">
+        <p>HTML</p>
+        <p>CSS</p>
+        <p>JAVASCRIPT</p>
+        <p>SQL</p>
+        <p>PYTHON</p>
+        <p>JAVA</p>
+        <p>PHP</p>
+        <p>HOWTO</p>
+        <p>W3.CSS</p>
+        <p>C</p>
+        <p>C++</p>
+        <p>C#</p>
+        <p>BOOTSTRAP</p>
+        <p>REACT</p>
+        <p>MYSQL</p>
+        <p>JQUERY</p>
+        <p>EXCEL</p>
+        <p>XML</p>
+        <p>DJANGO</p>
+        <p>NUMPY</p>
+        
+    </div>
+</body>
+
+</html>
